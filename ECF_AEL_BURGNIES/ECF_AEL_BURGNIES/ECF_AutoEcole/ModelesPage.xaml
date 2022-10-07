@@ -1,0 +1,48 @@
+﻿<Page x:Class="ECF_AutoEcole.ModelesPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:ECF_AutoEcole"
+      mc:Ignorable="d" 
+      d:DesignHeight="550" d:DesignWidth="1000"
+      Height="600"
+      Title="ModelesPage">
+    <Page.Background>
+        <ImageBrush ImageSource="image/index.jpg"/>
+    </Page.Background>
+    <Grid>
+        <DataGrid x:Name="datagrid" AutoGenerateColumns="false" Margin="543,75,160,153" IsReadOnly="true" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto" MaxHeight="400">
+            <DataGrid.Resources>
+                <Style TargetType="DataGridRow">
+                    <EventSetter Event="MouseDoubleClick" Handler="DataGridRow_DoubleClick"/>
+                </Style>
+            </DataGrid.Resources>
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Modèle" Binding="{Binding ModeleVehicule}"/>
+                <DataGridTextColumn Header="Marque" Binding="{Binding Marque}"/>
+                <DataGridTextColumn Header="Année" Binding="{Binding Annee}"/>
+                <DataGridTextColumn Header="Date Achat" Binding="{Binding DateAchat, StringFormat={}{0:dd/MM/yyyy HH:mm}}"/>
+            </DataGrid.Columns>
+        </DataGrid>
+        <Button x:Name="insert_btn" Content="Ajouter" HorizontalAlignment="Left" Margin="305,485,0,0" VerticalAlignment="Top" Height="36" Width="80" IsEnabled="true" Background="#0066FF" Click="insert_btn_Click"/>
+        <TextBox x:Name="modele_txt" HorizontalAlignment="Left" Margin="263,121,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.47,0.194" Height="26"/>
+        <Label Content="Modèle :" HorizontalAlignment="Left" Margin="162,115,0,0" VerticalAlignment="Top" Height="36" FontSize="20" Foreground="#00dcff 
+"/>
+        <TextBlock HorizontalAlignment="Center" Margin="0,11,0,0" TextWrapping="Wrap" Text="Gérer les Modèles" VerticalAlignment="Top" TextAlignment="Center" FontSize="25" Foreground="#0fff00"/>
+        <TextBox x:Name="marque_txt" HorizontalAlignment="Left" Margin="263,175,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="26"/>
+        <Label Content="Marque :" HorizontalAlignment="Left" Margin="158,168,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#00dcff"/>
+        <DatePicker x:Name="date_picker" HorizontalAlignment="Left" Margin="275,300,0,0" VerticalAlignment="Top" Height="28" Width="160"/>
+        <Label Content="Date Achat :" HorizontalAlignment="Left" Margin="150,293,0,0" VerticalAlignment="Top" Width="156" FontSize="20" Foreground="#00dcff"/>
+
+        <Button x:Name="edit_btn" Content="Modifier" HorizontalAlignment="Left" Margin="421,485,0,0" VerticalAlignment="Top" Height="36" Width="81" IsEnabled="false" Background="#0066FF" Click="edit_btn_Click"/>
+        <Button x:Name="delete_btn" Content="Supprimer" HorizontalAlignment="Left" Margin="536,485,0,0" VerticalAlignment="Top" Height="36" Width="82" IsEnabled="false" Background="#0066FF" Click="delete_btn_Click"/>
+        <Button x:Name="cancel_btn" Content="Annuler" HorizontalAlignment="Left" Margin="651,485,0,0" VerticalAlignment="Top" Height="36" Width="81" IsEnabled="true" Background="#0066FF" Click="cancel_btn_Click"/>
+        <TextBox x:Name="annee_txt" HorizontalAlignment="Left" Margin="265,231,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" Height="26"/>
+        <Label Content="Année :" HorizontalAlignment="Left" Margin="162,224,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#00dcff"/>
+        <TextBox x:Name="search_txt" HorizontalAlignment="Left" Margin="162,404,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="search_btn" Content="Rechercher" HorizontalAlignment="Left" Margin="300,403,0,0" VerticalAlignment="Top" Background="#0066FF" Click="search_btn_Click"/>
+        <Button x:Name="search_cancel_btn" Content="Annuler" HorizontalAlignment="Left" Margin="384,402,0,0" VerticalAlignment="Top" Background="#0066FF" Click="search_cancel_btn_Click"/>
+
+    </Grid>
+</Page>

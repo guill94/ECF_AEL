@@ -1,0 +1,11 @@
+TO DO LIST ECF AUTO ÉCOLE :
+
+- Faire toute la conception si le temps le permettait, les flots alternatifs des Uses Cases seraient bien utils notamment pour gérer toutes les exceptions et cas qui posent problèmes.
+- Améliorer les vérifications sur les formulaires.
+- Rajouter une vérification pour les jours fériés non fixes lors de l'ajout d'un "calendrier" (Cela a été fait pour ceux qui sont fixes 01/01, 25/12...).
+- Optimiser le code de manière générale, par exemple pour la vérification des disponibilités élèves et moniteurs.
+- Pour la partie leçon la création se fait avec les "ComboBox", lorsqu'il y a 10 élèves par exemple ce n'est pas un souci. 
+En revanche s'il commence à y en avoir 300 ce sera long. Un système de recherche sur les ConboBox serait judicieux ou changer les ComboBox.
+- Optimiser pour pourvoir mettre directement l'heure avec la date et éviter de manipuler le datetime dans le back s'il existe quelque chose pour ça.
+- Système de Login pourrait être intéressant.
+- Statistiques.
