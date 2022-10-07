@@ -26,15 +26,15 @@
                 <DataGridTextColumn Header="Durée" Binding="{Binding Duree}"/>
             </DataGrid.Columns>
         </DataGrid>
-        <Button x:Name="insert_btn" Content="Ajouter" HorizontalAlignment="Left" Margin="281,485,0,0" VerticalAlignment="Top" Height="36" Width="80" IsEnabled="true" Background="#0066FF" Click="insert_btn_Click"/>
+        <Button x:Name="insert_btn" Content="Ajouter" HorizontalAlignment="Left" Margin="289,485,0,0" VerticalAlignment="Top" Height="36" Width="80" IsEnabled="true" Background="#0066FF" Click="insert_btn_Click"/>
         <TextBox x:Name="duree_txt" HorizontalAlignment="Left" Margin="269,303,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="148" RenderTransformOrigin="0.47,0.194" Height="26"/>
         <Label Content="Durée :" HorizontalAlignment="Left" Margin="153,295,0,0" VerticalAlignment="Top" Height="36" FontSize="20" Foreground="#00dcff 
 " RenderTransformOrigin="1.401,0.513"/>
         <TextBlock HorizontalAlignment="Center" Margin="0,11,0,0" TextWrapping="Wrap" Text="Gérer les leçons" VerticalAlignment="Top" TextAlignment="Center" FontSize="25" Foreground="#0fff00"/>
 
-        <Button x:Name="edit_btn" Content="Modifier" HorizontalAlignment="Left" Margin="396,485,0,0" VerticalAlignment="Top" Height="36" Width="80" IsEnabled="false" Background="#0066FF" Click="edit_btn_Click"/>
-        <Button x:Name="delete_btn" Content="Supprimer" HorizontalAlignment="Left" Margin="512,485,0,0" VerticalAlignment="Top" Height="36" Width="82" IsEnabled="false" Background="#0066FF" Click="delete_btn_Click"/>
-        <Button x:Name="cancel_btn" Content="Annuler" HorizontalAlignment="Left" Margin="627,485,0,0" VerticalAlignment="Top" Height="36" Width="81" IsEnabled="true" Background="#0066FF" Click="cancel_btn_Click"/>
+        <Button x:Name="edit_btn" Content="Modifier" HorizontalAlignment="Left" Margin="404,485,0,0" VerticalAlignment="Top" Height="36" Width="80" IsEnabled="false" Background="#0066FF" Click="edit_btn_Click"/>
+        <Button x:Name="delete_btn" Content="Supprimer" HorizontalAlignment="Left" Margin="520,485,0,0" VerticalAlignment="Top" Height="36" Width="82" IsEnabled="false" Background="#0066FF" Click="delete_btn_Click"/>
+        <Button x:Name="cancel_btn" Content="Annuler" HorizontalAlignment="Left" Margin="635,485,0,0" VerticalAlignment="Top" Height="36" Width="81" IsEnabled="true" Background="#0066FF" Click="cancel_btn_Click"/>
         <TextBox x:Name="id_txt" HorizontalAlignment="Left" Margin="277,113,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="60" Visibility="Collapsed"/>
         <TextBox x:Name="search_txt" HorizontalAlignment="Left" Margin="164,372,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="search_btn" Content="Rechercher" HorizontalAlignment="Left" Margin="302,371,0,0" VerticalAlignment="Top" Background="#0066FF" Click="search_btn_Click"/>
